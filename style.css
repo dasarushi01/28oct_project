@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #ff7043;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.recipe-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.recipe-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-image {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.recipe-content {
+  padding: 1.5rem;
+}
+
+.recipe-content h2 {
+  margin-top: 0.5rem;
+  color: #ff7043;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.recipe-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.recipe-info span {
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.recipe-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.ingredients, .steps {
+  flex: 1 1 250px;
+}
+
+.ingredients ul, .steps ol {
+  margin-top: 0.5rem;
+  margin-left: 1.2rem;
+}
+
+.ingredients ul li, .steps ol li {
+  margin-bottom: 0.4rem;
+}
+
+.tips {
+  background: #fff3e0;
+  border-left: 5px solid #ff7043;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.print-btn {
+  display: inline-block;
+  margin-top: 1.2rem;
+  background: #ff7043;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.print-btn:hover {
+  background: #e65c2d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recipe-layout {
+    flex-direction: column;
+  }
+
+  .recipe-info {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}

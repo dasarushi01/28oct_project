@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Recipe Card</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>🍝 Tasty Recipe Collection</h1>
+  </header>
+
+  <main class="recipe-gallery">
+    
+    <!-- Recipe Card -->
+    <article class="recipe-card">
+      <img src="https://images.unsplash.com/photo-1604908177522-040cb8a20a3c" alt="Pasta Dish" class="recipe-image">
+
+      <div class="recipe-content">
+        <h2>Classic Creamy Pasta</h2>
+        <p class="description">A rich and creamy Italian pasta recipe perfect for cozy dinners.</p>
+
+        <div class="recipe-info">
+          <p><span>⏱</span> Prep Time: 15 mins</p>
+          <p><span>🔥</span> Cook Time: 20 mins</p>
+          <p><span>🍽</span> Servings: 2</p>
+        </div>
+
+        <div class="recipe-layout">
+          <section class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>200g spaghetti</li>
+              <li>2 tbsp olive oil</li>
+              <li>1 cup cream</li>
+              <li>1/2 cup grated cheese</li>
+              <li>Salt and pepper to taste</li>
+              <li>Fresh basil for garnish</li>
+            </ul>
+          </section>
+
+          <section class="steps">
+            <h3>Instructions</h3>
+            <ol>
+              <li>Boil pasta until al dente.</li>
+              <li>Heat olive oil and add cream in a pan.</li>
+              <li>Mix in cheese and stir well.</li>
+              <li>Combine pasta with sauce, season with salt & pepper.</li>
+              <li>Garnish with basil and serve hot.</li>
+            </ol>
+          </section>
+        </div>
+
+        <section class="tips">
+          <h3>Tips & Nutrition</h3>
+          <p>💡 Add grilled chicken or mushrooms for extra flavor. Each serving has approx. 420 kcal.</p>
+        </section>
+
+        <button class="print-btn" onclick="window.print()">🖨 Print Recipe</button>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2025 Recipe World | Designed by Mohit</p>
+  </footer>
+
+</body>
+</html>
